@@ -1,0 +1,19 @@
+.wrapper {
+  height: 100vh;
+}
+
+.debug {
+  border: 2px dashed red;
+}
+
+.container {
+  width: 70%;
+  height: 100%;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.contacts-list {
+  width: 40%;
+  height: 100%;
+}
