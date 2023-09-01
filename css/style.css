@@ -1,12 +1,16 @@
-.wrapper {
-  height: 100vh;
-}
+/**********
+***DEBUG***
+**********/
 
 .debug-1 {
   border: 2px dashed red;
 }
 .debug-2 {
   border: 2px dotted green;
+}
+
+.wrapper {
+  height: 100vh;
 }
 
 .container {
@@ -16,25 +20,21 @@
   padding-right: 0;
 }
 
-.contacts-list {
+/*****************
+******UTILS*******
+*****************/
+
+.user-options {
+  height: 10%;
+}
+
+/*****************
+***CONTACTS BOX***
+*****************/
+
+.contacts-box {
   width: 40%;
   height: 100%;
-}
-
-.chat-box {
-  width: 60%;
-  height: 100%;
-}
-.user-option {
-  height: 10%;
-}
-
-.chat-input {
-  height: 10%;
-}
-
-.chat-window {
-  height: 80%;
 }
 
 .notification-bar {
@@ -43,5 +43,22 @@
 }
 
 .search-input {
-  height: 5%;
+  height: 6%;
+}
+
+/*****************
+***CONTACTS BOX***
+*****************/
+
+.chat-box {
+  width: 60%;
+  height: 100%;
+}
+
+.chat-window {
+  height: 80%;
+}
+
+.chat-input {
+  height: 10%;
 }
