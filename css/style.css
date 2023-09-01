@@ -36,3 +36,12 @@
 .chat-window {
   height: 80%;
 }
+
+.notification-bar {
+  height: 12%;
+  background-color: #8edafc;
+}
+
+.search-input {
+  height: 5%;
+}
