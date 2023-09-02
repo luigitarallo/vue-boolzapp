@@ -17,6 +17,7 @@
   --background-color: #eaeaea;
   --text-muted-color: #8c9396;
   --text-muted-weight: 500;
+  --avatar-nav-icon-size: 60px;
 }
 
 /*****************
@@ -29,7 +30,6 @@
 }
 
 .container {
-  width: 70%;
   height: 95%;
   padding-left: 0;
   padding-right: 0;
@@ -73,14 +73,14 @@
 
 .people-avatar {
   display: inline-block;
-  width: 60px;
+  width: var(--avatar-nav-icon-size);
   border-radius: 50%;
   overflow: hidden;
   margin-left: 0.8rem;
 }
 
 .people-avatar > img {
-  max-width: 60px;
+  max-width: var(--avatar-nav-icon-size);
 }
 .people-infos {
   display: flex;
@@ -100,8 +100,44 @@
 }
 
 .notification-bar {
-  height: 12%;
+  height: 11%;
   background-color: #8edafc;
+}
+
+.notification-elements {
+  display: flex;
+}
+
+.notification-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--avatar-nav-icon-size);
+  background-color: var(--background-color);
+  border-radius: 50%;
+  height: var(--avatar-nav-icon-size);
+  margin-left: 1.2rem;
+}
+.notification-icon > i {
+  display: inline-block;
+  font-size: 1.7rem;
+  color: #8edafc;
+}
+
+.notification-settings {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+  justify-content: center;
+}
+
+.notification-text {
+  display: inline-block;
+  font-weight: var(--text-muted-weight);
+}
+
+.notification-link {
+  display: inline-block;
 }
 
 .search-input {
