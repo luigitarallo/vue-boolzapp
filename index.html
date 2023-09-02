@@ -4,6 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BoolZapp</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- BootStrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
@@ -26,15 +35,66 @@
       id="app"
     >
       <div class="container d-flex debug-1">
-        <!-- Contacts Box -->
-        <div class="contacts-box debug-1">
-          <nav class="user-options debug-2"></nav>
-          <div class="notification-bar"></div>
+        <!-- CONTACTS CONTAINER -->
+        <div class="contacts-container debug-1">
+          <!-- User Nav -->
+          <nav class="user-options">
+            <div class="d-flex align-items-center">
+              <!-- User Image -->
+              <span class="people-avatar">
+                <img src="./img/avatar_io.jpg" alt="user avatar" />
+              </span>
+              <!-- User Name -->
+              <div class="people-infos">
+                <span class="people-name">Sofia</span>
+              </div>
+            </div>
+            <!-- User Options Menu -->
+            <div>
+              <ul class="user-options-icons">
+                <li><i class="fa-solid fa-circle-notch"></i></li>
+                <li><i class="fa-solid fa-message"></i></li>
+                <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+              </ul>
+            </div>
+          </nav>
+          <div class="notification-bar d-flex align-items-center">
+            <div class="">
+              <!-- Notification Icon -->
+              <span class="">
+                <i class="fa-solid fa-bell-slash"></i>
+              </span>
+              <!-- Notifications Settings -->
+            </div>
+          </div>
           <div class="search-input debug-2"></div>
         </div>
-        <!-- Chat Box -->
-        <div class="chat-box debug-1">
-          <nav class="user-options debug-2"></nav>
+        <!-- CHAT CONTAINER -->
+        <div class="chat-container debug-1">
+          <!-- Chat Nav -->
+          <nav class="user-options">
+            <div class="people d-flex align-items-center">
+              <!-- People Image -->
+              <span class="people-avatar">
+                <img src="./img/avatar_1.jpg" alt="user avatar" />
+              </span>
+              <!-- People Name & Infos -->
+              <div class="people-infos">
+                <span class="people-name">Michele</span>
+                <span class="people-description"
+                  >Ultimo accesso oggi alle 12:00</span
+                >
+              </div>
+            </div>
+            <!-- People Options Menu -->
+            <div>
+              <ul class="user-options-icons d-flex">
+                <li><i class="fa-solid fa-magnifying-glass"></i></li>
+                <li><i class="fa-solid fa-paperclip"></i></li>
+                <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
+              </ul>
+            </div>
+          </nav>
           <div class="chat-window debug-2"></div>
           <div class="chat-input debug-2"></div>
         </div>
