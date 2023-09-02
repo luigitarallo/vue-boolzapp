@@ -100,6 +100,8 @@
 }
 
 .notification-bar {
+  display: flex;
+  align-items: center;
   height: 11%;
   background-color: #8edafc;
 }
