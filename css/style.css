@@ -9,6 +9,20 @@
   border: 2px dotted green;
 }
 
+/***********************
+****CUSTOM PROPERTIES***
+************************/
+
+:root {
+  --background-color: #eaeaea;
+  --text-muted-color: #8c9396;
+  --text-muted-weight: 500;
+}
+
+/*****************
+****CONTAINER*****
+*****************/
+
 .wrapper {
   height: 100vh;
   background-image: linear-gradient(#009688 15%, #d9dbd4 10%);
@@ -27,15 +41,62 @@
 
 .user-options {
   height: 10%;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/*****************
-***CONTACTS BOX***
-*****************/
+.user-options-icons {
+  display: flex;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-right: 0.8rem;
+}
 
-.contacts-box {
+.user-options-icons > li {
+  font-size: 1.5rem;
+  color: var(--text-muted-color);
+  padding-left: 0.7rem;
+  padding-right: 0.7rem;
+}
+
+/***********************
+***CONTACTS CONTAINER***
+***********************/
+
+.contacts-container {
   width: 40%;
   height: 100%;
+}
+
+.people-avatar {
+  display: inline-block;
+  width: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 0.8rem;
+}
+
+.people-avatar > img {
+  max-width: 60px;
+}
+.people-infos {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5rem;
+}
+
+.people-name {
+  display: inline-block;
+  font-weight: 500;
+}
+
+.people-description {
+  display: inline-block;
+  font-weight: var(--text-muted-weight);
+  color: var(--text-muted-color);
 }
 
 .notification-bar {
@@ -47,17 +108,18 @@
   height: 6%;
 }
 
-/*****************
-***CONTACTS BOX***
-*****************/
+/*******************
+***CHAT CONTAINER***
+********************/
 
-.chat-box {
+.chat-container {
   width: 60%;
   height: 100%;
 }
 
 .chat-window {
   height: 80%;
+  background-image: url(../img/mine.jpg);
 }
 
 .chat-input {
