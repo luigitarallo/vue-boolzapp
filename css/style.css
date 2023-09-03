@@ -17,6 +17,7 @@
   --background-color: #eaeaea;
   --text-muted-color: #8c9396;
   --text-muted-weight: 500;
+  --text-muted-size: small;
   --avatar-nav-icon-size: 60px;
 }
 
@@ -38,6 +39,11 @@
 /*****************
 ******UTILS*******
 *****************/
+
+a {
+  color: var(--text-muted-color);
+  font-size: var(--text-muted-size);
+}
 
 .user-options {
   height: 10%;
@@ -71,6 +77,8 @@
   height: 100%;
 }
 
+/* PEOPLE PROPERTIES */
+
 .people-avatar {
   display: inline-block;
   width: var(--avatar-nav-icon-size);
@@ -97,7 +105,10 @@
   display: inline-block;
   font-weight: var(--text-muted-weight);
   color: var(--text-muted-color);
+  font-size: small;
 }
+
+/* NOTIFICATION PROPERTIES */
 
 .notification-bar {
   display: flex;
@@ -141,6 +152,8 @@
 .notification-link {
   display: inline-block;
 }
+
+/* SEARCH PROPERTIES */
 
 .search-input {
   height: 6%;
