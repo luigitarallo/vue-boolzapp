@@ -38,7 +38,7 @@
         <!-- CONTACTS CONTAINER -->
         <div class="contacts-container debug-1">
           <!-- User Nav -->
-          <nav class="user-options">
+          <nav class="user-nav">
             <div class="d-flex align-items-center">
               <!-- User Image -->
               <span class="people-avatar">
@@ -49,9 +49,9 @@
                 <span class="people-name">Sofia</span>
               </div>
             </div>
-            <!-- User Options Menu -->
+            <!-- User Nav Icons -->
             <div>
-              <ul class="user-options-icons">
+              <ul class="user-nav-icons">
                 <li><i class="fa-solid fa-circle-notch"></i></li>
                 <li><i class="fa-solid fa-message"></i></li>
                 <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
@@ -76,12 +76,26 @@
               </div>
             </div>
           </div>
-          <div class="search-input debug-2"></div>
+          <!-- Search Input -->
+          <div class="search-input">
+            <div class="input-group">
+              <span class="input-group-text" id="basic-addon1"
+                ><i class="fa-solid fa-magnifying-glass"></i
+              ></span>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Cerca o inizia una nuova chat"
+                aria-label="Username"
+                aria-describedby="basic-addon1"
+              />
+            </div>
+          </div>
         </div>
         <!-- CHAT CONTAINER -->
         <div class="chat-container debug-1">
-          <!-- Chat Nav -->
-          <nav class="user-options">
+          <!-- Chat User Nav -->
+          <nav class="user-nav">
             <div class="people d-flex align-items-center">
               <!-- People Image -->
               <span class="people-avatar">
@@ -95,9 +109,9 @@
                 >
               </div>
             </div>
-            <!-- People Options Menu -->
+            <!-- People Nav Icons -->
             <div>
-              <ul class="user-options-icons d-flex">
+              <ul class="user-nav-icons d-flex">
                 <li><i class="fa-solid fa-magnifying-glass"></i></li>
                 <li><i class="fa-solid fa-paperclip"></i></li>
                 <li><i class="fa-solid fa-ellipsis-vertical"></i></li>
