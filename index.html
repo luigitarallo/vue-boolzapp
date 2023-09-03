@@ -238,11 +238,11 @@
             <div class="people d-flex align-items-center">
               <!-- People Image -->
               <span class="people-avatar">
-                <img src="./img/avatar_1.jpg" alt="user avatar" />
+                <img :src="contacts[activeChat].avatar" alt="user avatar" />
               </span>
               <!-- People Name & Infos -->
               <div class="people-infos">
-                <span class="people-name">Michele</span>
+                <span class="people-name">{{contacts[activeChat].name}}</span>
                 <span class="people-description"
                   >Ultimo accesso oggi alle 12:00</span
                 >
