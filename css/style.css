@@ -20,6 +20,7 @@
   --text-muted-size: small;
   --avatar-nav-icon-size: 50px;
   --chat-text-muted-color: #babbbb;
+  --border-color: #c0c1c1;
 }
 
 /*****************
@@ -154,7 +155,7 @@ a {
   display: inline-block;
 }
 
-/* SEARCH PROPERTIES */
+/* SEARCH INPUT PROPERTIES */
 
 .search-input {
   height: 6%;
@@ -198,8 +199,13 @@ a {
 .contact-box {
   display: flex;
   justify-content: space-between;
-  background-color: #e9ebeb;
+  background-color: #ffffff;
   padding: 0.7rem 0.5rem;
+  border-top: 2px solid #fafafa;
+}
+
+.active-box {
+  background-color: #e9ebeb;
 }
 
 .contact-avatar {
@@ -247,7 +253,7 @@ a {
 }
 
 .chat-container > .user-nav {
-  border-left: 1px solid var(--text-muted-color);
+  border-left: 1px solid var(--border-color);
 }
 
 .chat-window {
@@ -256,5 +262,20 @@ a {
 }
 
 .chat-input {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   height: 10%;
+  background-color: var(--background-color);
+  border-left: 1px solid var(--border-color);
+}
+
+.emoji-menu {
+  color: var(--text-muted-color);
+  margin: 0 2rem;
+}
+
+.mic-input {
+  margin: 0 2rem;
+  color: var(--text-muted-color);
 }
