@@ -18,7 +18,8 @@
   --text-muted-color: #8c9396;
   --text-muted-weight: 500;
   --text-muted-size: small;
-  --avatar-nav-icon-size: 60px;
+  --avatar-nav-icon-size: 50px;
+  --chat-text-muted-color: #babbbb;
 }
 
 /*****************
@@ -157,7 +158,7 @@ a {
 
 .search-input {
   height: 6%;
-  background-color: var(--background-color);
+  background-color: #fafafa;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -182,6 +183,60 @@ a {
   color: var(--text-muted-color) !;
 }
 
+/* CONTACTS CONTAINER LIST */
+
+.contacts-container-box {
+  height: 73%;
+  background-color: #ffffff;
+}
+
+.contacts-container-list {
+  padding-left: 0;
+  list-style: none;
+}
+
+.contact-box {
+  display: flex;
+  justify-content: space-between;
+  background-color: #e9ebeb;
+  padding: 0.7rem 0.5rem;
+}
+
+.contact-avatar {
+  width: var(--avatar-nav-icon-size);
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-left: 0.5rem;
+}
+
+.contact-infos {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.5rem;
+}
+
+.contact-avatar > img {
+  max-width: var(--avatar-nav-icon-size);
+}
+
+.contact-name {
+  font-weight: 500;
+}
+
+.contact-last-message {
+  font-weight: var(--text-muted-weight);
+  color: var(--chat-text-muted-color);
+  font-size: small;
+}
+
+.contact-time {
+  display: inline-block;
+  color: var(--chat-text-muted-color);
+  font-size: smaller;
+  font-weight: var(--text-muted-weight);
+}
+
 /*******************
 ***CHAT CONTAINER***
 ********************/
@@ -189,6 +244,10 @@ a {
 .chat-container {
   width: 60%;
   height: 100%;
+}
+
+.chat-container > .user-nav {
+  border-left: 1px solid var(--text-muted-color);
 }
 
 .chat-window {
