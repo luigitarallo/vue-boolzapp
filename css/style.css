@@ -45,7 +45,7 @@ a {
   font-size: var(--text-muted-size);
 }
 
-.user-options {
+.user-nav {
   height: 10%;
   background-color: var(--background-color);
   display: flex;
@@ -53,7 +53,7 @@ a {
   align-items: center;
 }
 
-.user-options-icons {
+.user-nav-icons {
   display: flex;
   list-style: none;
   padding-left: 0;
@@ -61,7 +61,7 @@ a {
   margin-right: 0.8rem;
 }
 
-.user-options-icons > li {
+.user-nav-icons > li {
   font-size: 1.5rem;
   color: var(--text-muted-color);
   padding-left: 0.7rem;
@@ -157,6 +157,29 @@ a {
 
 .search-input {
   height: 6%;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-group {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.input-group-text > i {
+  color: var(--text-muted-color);
+}
+
+.form-control {
+  border-left: 0;
+}
+
+::placeholder {
+  font-weight: var(--text-muted-weight);
+  font-size: small;
+  color: var(--text-muted-color) !;
 }
 
 /*******************
