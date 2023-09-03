@@ -95,7 +95,12 @@
           <div class="contacts-container-box">
             <ul class="contacts-container-list">
               <!-- Contact -->
-              <li v-for="(contact,i) in contacts" class="contact-box">
+              <li
+                v-for="(contact,i) in contacts"
+                v-on:click="clickChat(i)"
+                v-bind:class="(i==activeChat) ? 'active-box' : ''"
+                class="contact-box"
+              >
                 <div class="d-flex">
                   <!-- Contact Image -->
                   <span class="contact-avatar">
