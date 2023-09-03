@@ -2,12 +2,12 @@
 ***DEBUG***
 **********/
 
-.debug-1 {
+/* .debug-1 {
   border: 2px dashed red;
 }
 .debug-2 {
   border: 2px dotted green;
-}
+} */
 
 /***********************
 ****CUSTOM PROPERTIES***
@@ -75,7 +75,7 @@ a {
 ***********************/
 
 .contacts-container {
-  width: 40%;
+  width: 35%;
   height: 100%;
 }
 
@@ -248,18 +248,70 @@ a {
 ********************/
 
 .chat-container {
-  width: 60%;
+  width: 65%;
   height: 100%;
 }
+
+/* CHAT CONTAINER NAV */
 
 .chat-container > .user-nav {
   border-left: 1px solid var(--border-color);
 }
+/* CHAT WINDOW */
 
 .chat-window {
   height: 80%;
   background-image: url(../img/mine.jpg);
+  padding-top: 2.5rem;
+  padding-left: 4rem;
+  padding-right: 4rem;
 }
+
+/* MESSAGES */
+
+.message-box {
+  display: flex;
+  font-weight: var(--text-muted-weight);
+  margin-top: 10px;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  width: 290px;
+  padding-left: 1rem;
+  border-radius: 10px;
+}
+
+.message-txt {
+  line-height: 40px;
+}
+
+.message-txt-time {
+  font-size: xx-small;
+  color: var(--chat-text-muted-color);
+  text-align: end;
+  margin-right: 0.4rem;
+  margin-bottom: 0.2rem;
+}
+
+.sent {
+  justify-content: end;
+}
+
+.sent .message {
+  background-color: #d5f9ba;
+}
+
+.received {
+  justify-content: start;
+}
+
+.received .message {
+  background-color: #ffffff;
+}
+
+/* CHAT INPUT BAR */
 
 .chat-input {
   display: flex;
