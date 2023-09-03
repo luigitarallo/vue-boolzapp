@@ -42,4 +42,4 @@
 ### Milestone 2
 
 - Aggiungo una funzione che al click mi selezioni la chat desiderata
--
+- Aggiungo una direttiva v-for per stampare i messaggi sulla selezione di una chat

@@ -260,24 +260,28 @@
           <!-- Chat window -->
           <div class="chat-window">
             <!-- Messages boxes -->
-            <div class="message-box sent">
+            <div
+              v-for="(txt,index) in contacts[activeChat].messages"
+              class="message-box"
+              v-bind:class="(txt.status=='sent') ? 'sent' : 'received'"
+            >
               <div class="message">
-                <span class="message-txt">Hai portato a spasso il cane?</span>
-                <span class="message-txt-time">15:30</span>
+                <span class="message-txt">{{txt.message}}</span>
+                <span class="message-txt-time">{{txt.date}}</span>
               </div>
             </div>
-            <div class="message-box sent">
+            <!-- <div class="message-box sent">
               <div class="message">
                 <span class="message-txt">Ricordati di stendere i panni</span>
                 <span class="message-txt-time">15:50</span>
               </div>
-            </div>
-            <div class="message-box received">
+            </div> -->
+            <!-- <div class="message-box received">
               <div class="message">
                 <span class="message-txt">Tutto fatto!</span>
                 <span class="message-txt-time">16:15</span>
               </div>
-            </div>
+            </div> -->
           </div>
           <!-- Chat input new message -->
           <div class="chat-input">
