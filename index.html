@@ -26,8 +26,8 @@
     <!-- JS Vue -->
     <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
     <!-- My JavaScript -->
-    <script type="text/javascript" src="./js/main.js" defer></script>
     <script type="text/javascript" src="./js/data.js" defer></script>
+    <script type="text/javascript" src="./js/main.js" defer></script>
   </head>
   <body>
     <div
@@ -95,15 +95,15 @@
           <div class="contacts-container-box">
             <ul class="contacts-container-list">
               <!-- Contact -->
-              <li class="contact-box active-box">
+              <li v-for="(contact,i) in contacts" class="contact-box">
                 <div class="d-flex">
                   <!-- Contact Image -->
                   <span class="contact-avatar">
-                    <img src="./img/avatar_1.jpg" alt="contact avatar" />
+                    <img :src="contact.avatar" alt="contact avatar" />
                   </span>
                   <!-- People Name & Infos -->
                   <div class="contact-infos">
-                    <span class="contact-name">Michele</span>
+                    <span class="contact-name">{{contact.name}}</span>
                     <span class="contact-last-message"
                       >Ultimo messaggio inviato</span
                     >
@@ -112,13 +112,12 @@
                 <span class="contact-time"> 12:00 </span>
               </li>
               <!-- Contact -->
-              <li class="contact-box">
+              <!-- <li class="contact-box">
                 <div class="d-flex">
-                  <!-- Contact Image -->
                   <span class="contact-avatar">
                     <img src="./img/avatar_2.jpg" alt="contact avatar" />
                   </span>
-                  <!-- People Name & Infos -->
+
                   <div class="contact-infos">
                     <span class="contact-name">Fabio</span>
                     <span class="contact-last-message"
@@ -127,15 +126,14 @@
                   </div>
                 </div>
                 <span class="contact-time"> 12:00 </span>
-              </li>
+              </li> -->
               <!-- Contact -->
-              <li class="contact-box">
+              <!-- <li class="contact-box">
                 <div class="d-flex">
-                  <!-- Contact Image -->
                   <span class="contact-avatar">
                     <img src="./img/avatar_3.jpg" alt="contact avatar" />
                   </span>
-                  <!-- People Name & Infos -->
+
                   <div class="contact-infos">
                     <span class="contact-name">Samuele</span>
                     <span class="contact-last-message"
@@ -144,15 +142,14 @@
                   </div>
                 </div>
                 <span class="contact-time"> 12:00 </span>
-              </li>
+              </li> -->
               <!-- Contact -->
-              <li class="contact-box">
+              <!-- <li class="contact-box">
                 <div class="d-flex">
-                  <!-- Contact Image -->
                   <span class="contact-avatar">
                     <img src="./img/avatar_4.jpg" alt="contact avatar" />
                   </span>
-                  <!-- People Name & Infos -->
+
                   <div class="contact-infos">
                     <span class="contact-name">Alessandro B.</span>
                     <span class="contact-last-message"
@@ -161,15 +158,14 @@
                   </div>
                 </div>
                 <span class="contact-time"> 12:00 </span>
-              </li>
+              </li> -->
               <!-- Contact -->
-              <li class="contact-box">
+              <!-- <li class="contact-box">
                 <div class="d-flex">
-                  <!-- Contact Image -->
                   <span class="contact-avatar">
                     <img src="./img/avatar_5.jpg" alt="contact avatar" />
                   </span>
-                  <!-- People Name & Infos -->
+
                   <div class="contact-infos">
                     <span class="contact-name">Alessandro L.</span>
                     <span class="contact-last-message"
@@ -178,15 +174,14 @@
                   </div>
                 </div>
                 <span class="contact-time"> 12:00 </span>
-              </li>
+              </li> -->
               <!-- Contact -->
-              <li class="contact-box">
+              <!-- <li class="contact-box">
                 <div class="d-flex">
-                  <!-- Contact Image -->
                   <span class="contact-avatar">
                     <img src="./img/avatar_6.jpg" alt="contact avatar" />
                   </span>
-                  <!-- People Name & Infos -->
+
                   <div class="contact-infos">
                     <span class="contact-name">Claudia</span>
                     <span class="contact-last-message"
@@ -195,15 +190,14 @@
                   </div>
                 </div>
                 <span class="contact-time"> 12:00 </span>
-              </li>
+              </li> -->
               <!-- Contact -->
-              <li class="contact-box">
+              <!-- <li class="contact-box">
                 <div class="d-flex">
-                  <!-- Contact Image -->
                   <span class="contact-avatar">
                     <img src="./img/avatar_7.jpg" alt="contact avatar" />
                   </span>
-                  <!-- People Name & Infos -->
+
                   <div class="contact-infos">
                     <span class="contact-name">Federico</span>
                     <span class="contact-last-message"
@@ -212,15 +206,14 @@
                   </div>
                 </div>
                 <span class="contact-time"> 12:00 </span>
-              </li>
+              </li> -->
               <!-- Contact -->
-              <li class="contact-box">
+              <!-- <li class="contact-box">
                 <div class="d-flex">
-                  <!-- Contact Image -->
                   <span class="contact-avatar">
                     <img src="./img/avatar_8.jpg" alt="contact avatar" />
                   </span>
-                  <!-- People Name & Infos -->
+
                   <div class="contact-infos">
                     <span class="contact-name">Davide</span>
                     <span class="contact-last-message"
@@ -229,7 +222,7 @@
                   </div>
                 </div>
                 <span class="contact-time"> 12:00 </span>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>
