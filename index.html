@@ -296,6 +296,8 @@
                 class="form-control"
                 placeholder="Scrivi un messaggio"
                 aria-describedby="basic-addon1"
+                v-model="newMessage.message"
+                v-on:keyup.enter="addNewMessage()"
               />
             </div>
             <!-- New audio message input -->
