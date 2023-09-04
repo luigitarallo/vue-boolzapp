@@ -189,6 +189,7 @@ a {
 .contacts-container-box {
   height: 73%;
   background-color: #ffffff;
+  overflow-y: auto;
 }
 
 .contacts-container-list {
