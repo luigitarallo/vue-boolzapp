@@ -55,6 +55,7 @@ createApp({
     // Time Function to send Answear
     answearMessage() {
       setTimeout(() => {
+        const newMessageReceivedCopy = { ...this.newMessageReceived };
         const actualDate = new Date();
         let day = actualDate.getDate();
         let month = actualDate.getMonth() + 1;
@@ -69,9 +70,9 @@ createApp({
         let m = addZero(actualDate.getMinutes());
         let s = addZero(actualDate.getSeconds());
         let time = h + ":" + m + ":" + s;
-        this.newMessageReceived.date =
+        newMessageReceivedCopy.date =
           day + "/" + month + "/" + year + " " + time;
-        this.contacts[this.activeChat].messages.push(this.newMessageReceived);
+        this.contacts[this.activeChat].messages.push(newMessageReceivedCopy);
       }, 1000);
     },
   },
