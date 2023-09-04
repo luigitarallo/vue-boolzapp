@@ -261,7 +261,7 @@
           <div class="chat-window">
             <!-- Messages boxes -->
             <div
-              v-for="(txt,index) in contacts[activeChat].messages"
+              v-for="txt in contacts[activeChat].messages"
               class="message-box"
               v-bind:class="(txt.status=='sent') ? 'sent' : 'received'"
             >
