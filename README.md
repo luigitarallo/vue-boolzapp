@@ -58,3 +58,5 @@
 - Aggiungo un v-model alla barra di ricerca
 - Creo una variabile che prenderà gli input di testo dalla barra di ricerca
 - Aggiungo un v-show all'elemento li, rendo il nome dell'oggetto minuscolo, con includes controllo che il testo digitato nella barra di ricerca(anche questo reso in minuscolo) corrisponda al valore della proprietà con chiave name
+
+### Milestone 5

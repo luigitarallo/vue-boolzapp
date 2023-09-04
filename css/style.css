@@ -285,13 +285,15 @@ a {
 .message {
   display: flex;
   flex-direction: column;
-  width: 290px;
-  padding-left: 1rem;
+  max-width: 60%;
+  padding-top: 0.8rem;
+  padding-left: 0.8rem;
   border-radius: 10px;
+  line-height: 20px;
 }
 
 .message-txt {
-  line-height: 40px;
+  margin-right: 0.8rem;
 }
 
 .message-txt-time {
