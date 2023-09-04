@@ -19,6 +19,7 @@ createApp({
     clickChat(i) {
       this.activeChat = i;
     },
+    // Function to add new message
     addNewMessage() {
       const newMessageCopy = { ...this.newMessage };
       const actualDate = new Date();
