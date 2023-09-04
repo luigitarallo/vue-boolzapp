@@ -202,6 +202,11 @@ a {
   background-color: #ffffff;
   padding: 0.7rem 0.5rem;
   border-top: 2px solid #fafafa;
+  cursor: pointer;
+}
+
+.contact-box:hover {
+  background-color: #e9ebeb;
 }
 
 .active-box {
