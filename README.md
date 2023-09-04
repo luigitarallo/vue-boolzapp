@@ -50,3 +50,11 @@
 - Creo un nuovo oggetto di appoggio dove salvare i dati di input
 - Creo una funzione che copi l'oggetto di appoggio, quest'ultimo lo invio all'array di oggetti principale
 - Svuoto l'oggetto di appoggio
+- Creo una funzione temporalizzata che viene richiamata all'invio di un messaggio da parte dell'utente.
+  - La funzione aggiora un oggetto dichiarato precedentemente con dei nuovi valori per il tempo calcolati al suo interno. Viene avviata dopo 1 secondo
+
+### Milestone 4
+
+- Aggiungo un v-model alla barra di ricerca
+- Creo una variabile che prenderà gli input di testo dalla barra di ricerca
+- Aggiungo un v-show all'elemento li, rendo il nome dell'oggetto minuscolo, con includes controllo che il testo digitato nella barra di ricerca(anche questo reso in minuscolo) corrisponda al valore della proprietà con chiave name
