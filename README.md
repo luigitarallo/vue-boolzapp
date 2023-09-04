@@ -43,3 +43,10 @@
 
 - Aggiungo una funzione che al click mi selezioni la chat desiderata
 - Aggiungo una direttiva v-for per stampare i messaggi sulla selezione di una chat
+
+### Milestone 3
+
+- Aggiungo una direttiva v-model all'input
+- Creo un nuovo oggetto di appoggio dove salvare i dati di input
+- Creo una funzione che copi l'oggetto di appoggio, quest'ultimo lo invio all'array di oggetti principale
+- Svuoto l'oggetto di appoggio
