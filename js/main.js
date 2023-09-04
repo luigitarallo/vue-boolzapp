@@ -37,7 +37,7 @@ createApp({
       let time = h + ":" + m + ":" + s;
       newMessageCopy.date = day + "/" + month + "/" + year + " " + time;
       this.contacts[this.activeChat].messages.push(newMessageCopy);
-      this.newMessage = {};
+      this.newMessage = { date: "", message: "", status: "sent" };
     },
   },
 }).mount("#app");
