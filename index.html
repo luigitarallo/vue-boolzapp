@@ -99,6 +99,7 @@
                 v-on:click="clickChat(i)"
                 v-bind:class="(i==activeChat) ? 'active-box' : ''"
                 class="contact-box"
+                v-show="contact.name.toLowerCase().includes(searchName.toLowerCase())"
               >
                 <div class="d-flex">
                   <!-- Contact Image -->
