@@ -6,14 +6,15 @@ createApp({
       contacts,
       // Index
       activeChat: 0,
-
+      // Input search var
+      searchName: "",
       // New message obj
       newMessage: {
         date: "",
         message: "",
         status: "sent",
       },
-
+      // New message received obj
       newMessageReceived: {
         date: "",
         message: "OK!",
@@ -50,6 +51,8 @@ createApp({
       this.newMessage = { date: "", message: "", status: "sent" };
       this.answearMessage();
     },
+
+    // Time Function to send Answear
     answearMessage() {
       setTimeout(() => {
         const actualDate = new Date();
