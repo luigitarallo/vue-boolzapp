@@ -271,6 +271,7 @@ a {
   padding-top: 2.5rem;
   padding-left: 4rem;
   padding-right: 4rem;
+  overflow-y: auto;
 }
 
 /* MESSAGES */
