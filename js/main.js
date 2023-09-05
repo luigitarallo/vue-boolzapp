@@ -32,16 +32,21 @@ createApp({
     addNewMessage() {
       const newMessageCopy = { ...this.newMessage };
       const actualDate = new Date();
+
       function addZero(i) {
         if (i < 10) {
           i = "0" + i;
         }
         return i;
       }
+      let day = addZero(actualDate.getDate());
+      let month = addZero(actualDate.getMonth() + 1);
+      let year = addZero(actualDate.getFullYear());
       let h = addZero(actualDate.getHours());
       let m = addZero(actualDate.getMinutes());
-      let time = h + ":" + m;
-      newMessageCopy.date = time;
+      let s = addZero(actualDate.getSeconds());
+      let time = h + ":" + m + ":" + s;
+      newMessageCopy.date = day + "/" + month + "/" + year + " " + time;
       this.contacts[this.activeChat].messages.push(newMessageCopy);
 
       this.newMessage = { date: "", message: "", status: "sent" };
@@ -53,16 +58,23 @@ createApp({
       setTimeout(() => {
         const newMessageReceivedCopy = { ...this.newMessageReceived };
         const actualDate = new Date();
+
         function addZero(i) {
           if (i < 10) {
             i = "0" + i;
           }
           return i;
         }
+        let day = addZero(actualDate.getDate());
+        let month = addZero(actualDate.getMonth() + 1);
+        let year = addZero(actualDate.getFullYear());
         let h = addZero(actualDate.getHours());
         let m = addZero(actualDate.getMinutes());
-        let time = h + ":" + m;
-        newMessageReceivedCopy.date = time;
+        let s = addZero(actualDate.getSeconds());
+        let time = h + ":" + m + ":" + s;
+        newMessageReceivedCopy.date =
+          day + "/" + month + "/" + year + " " + time;
+        console.log(newMessageReceivedCopy.date);
         this.contacts[this.activeChat].messages.push(newMessageReceivedCopy);
       }, 1000);
     },
