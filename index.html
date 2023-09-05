@@ -261,12 +261,17 @@
           <div class="chat-window">
             <!-- Messages boxes -->
             <div
-              v-for="txt in contacts[activeChat].messages"
+              v-for="(txt,index) in contacts[activeChat].messages"
               class="message-box"
               v-bind:class="(txt.status=='sent') ? 'sent' : 'received'"
             >
               <div class="message">
-                <span class="message-txt">{{txt.message}}</span>
+                <div class="message-txt">
+                  {{txt.message}}
+                  <i class="fa-solid fa-chevron-down text-black-50"></i>
+                  <span class="message-options-menu d-none">Elimina</span>
+                </div>
+
                 <span class="message-txt-time"
                   >{{txt.date.substring(11,16)}}</span
                 >
