@@ -53,6 +53,10 @@ createApp({
       this.answearMessage();
     },
 
+    showMenu(index) {
+      console.log(index);
+    },
+
     // Time Function to send Answear
     answearMessage() {
       setTimeout(() => {
