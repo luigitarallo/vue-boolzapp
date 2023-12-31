@@ -116,118 +116,6 @@
                 </div>
                 <span class="contact-time"> 12:00 </span>
               </li>
-              <!-- Contact -->
-              <!-- <li class="contact-box">
-                <div class="d-flex">
-                  <span class="contact-avatar">
-                    <img src="./img/avatar_2.jpg" alt="contact avatar" />
-                  </span>
-
-                  <div class="contact-infos">
-                    <span class="contact-name">Fabio</span>
-                    <span class="contact-last-message"
-                      >Ultimo messaggio inviato</span
-                    >
-                  </div>
-                </div>
-                <span class="contact-time"> 12:00 </span>
-              </li> -->
-              <!-- Contact -->
-              <!-- <li class="contact-box">
-                <div class="d-flex">
-                  <span class="contact-avatar">
-                    <img src="./img/avatar_3.jpg" alt="contact avatar" />
-                  </span>
-
-                  <div class="contact-infos">
-                    <span class="contact-name">Samuele</span>
-                    <span class="contact-last-message"
-                      >Ultimo messaggio inviato</span
-                    >
-                  </div>
-                </div>
-                <span class="contact-time"> 12:00 </span>
-              </li> -->
-              <!-- Contact -->
-              <!-- <li class="contact-box">
-                <div class="d-flex">
-                  <span class="contact-avatar">
-                    <img src="./img/avatar_4.jpg" alt="contact avatar" />
-                  </span>
-
-                  <div class="contact-infos">
-                    <span class="contact-name">Alessandro B.</span>
-                    <span class="contact-last-message"
-                      >Ultimo messaggio inviato</span
-                    >
-                  </div>
-                </div>
-                <span class="contact-time"> 12:00 </span>
-              </li> -->
-              <!-- Contact -->
-              <!-- <li class="contact-box">
-                <div class="d-flex">
-                  <span class="contact-avatar">
-                    <img src="./img/avatar_5.jpg" alt="contact avatar" />
-                  </span>
-
-                  <div class="contact-infos">
-                    <span class="contact-name">Alessandro L.</span>
-                    <span class="contact-last-message"
-                      >Ultimo messaggio inviato</span
-                    >
-                  </div>
-                </div>
-                <span class="contact-time"> 12:00 </span>
-              </li> -->
-              <!-- Contact -->
-              <!-- <li class="contact-box">
-                <div class="d-flex">
-                  <span class="contact-avatar">
-                    <img src="./img/avatar_6.jpg" alt="contact avatar" />
-                  </span>
-
-                  <div class="contact-infos">
-                    <span class="contact-name">Claudia</span>
-                    <span class="contact-last-message"
-                      >Ultimo messaggio inviato</span
-                    >
-                  </div>
-                </div>
-                <span class="contact-time"> 12:00 </span>
-              </li> -->
-              <!-- Contact -->
-              <!-- <li class="contact-box">
-                <div class="d-flex">
-                  <span class="contact-avatar">
-                    <img src="./img/avatar_7.jpg" alt="contact avatar" />
-                  </span>
-
-                  <div class="contact-infos">
-                    <span class="contact-name">Federico</span>
-                    <span class="contact-last-message"
-                      >Ultimo messaggio inviato</span
-                    >
-                  </div>
-                </div>
-                <span class="contact-time"> 12:00 </span>
-              </li> -->
-              <!-- Contact -->
-              <!-- <li class="contact-box">
-                <div class="d-flex">
-                  <span class="contact-avatar">
-                    <img src="./img/avatar_8.jpg" alt="contact avatar" />
-                  </span>
-
-                  <div class="contact-infos">
-                    <span class="contact-name">Davide</span>
-                    <span class="contact-last-message"
-                      >Ultimo messaggio inviato</span
-                    >
-                  </div>
-                </div>
-                <span class="contact-time"> 12:00 </span>
-              </li> -->
             </ul>
           </div>
         </div>
@@ -268,27 +156,20 @@
               <div class="message">
                 <div class="message-txt">
                   {{txt.message}}
-                  <i class="fa-solid fa-chevron-down text-black-50"></i>
+                  <span>
+                    <i
+                      @click="showMenu(index)"
+                      class="fa-solid fa-chevron-down"
+                      class="dropdown-menu"
+                    ></i
+                  ></span>
                   <span class="message-options-menu d-none">Elimina</span>
                 </div>
-
                 <span class="message-txt-time"
                   >{{txt.date.substring(11,16)}}</span
                 >
               </div>
             </div>
-            <!-- <div class="message-box sent">
-              <div class="message">
-                <span class="message-txt">Ricordati di stendere i panni</span>
-                <span class="message-txt-time">15:50</span>
-              </div>
-            </div> -->
-            <!-- <div class="message-box received">
-              <div class="message">
-                <span class="message-txt">Tutto fatto!</span>
-                <span class="message-txt-time">16:15</span>
-              </div>
-            </div> -->
           </div>
           <!-- Chat input new message -->
           <div class="chat-input">
