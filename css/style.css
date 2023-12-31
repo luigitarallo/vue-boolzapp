@@ -249,9 +249,9 @@ a {
   font-weight: var(--text-muted-weight);
 }
 
-/*******************
-***CHAT CONTAINER***
-********************/
+/********************/
+/** CHAT CONTAINER **/
+/********************/
 
 .chat-container {
   width: 65%;
@@ -319,6 +319,10 @@ a {
 
 .received .message {
   background-color: #ffffff;
+}
+
+.dropdown-menu {
+  cursor: pointer;
 }
 
 .message-options-menu {
