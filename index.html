@@ -151,19 +151,22 @@
             <div
               v-for="(txt,index) in contacts[activeChat].messages"
               class="message-box"
-              v-bind:class="(txt.status=='sent') ? 'sent' : 'received'"
+              v-bind:class="(txt.status=='sent' ? 'sent' : 'received') + (txt.isDeleted ? ' deleted' : '')"
             >
               <div class="message">
                 <div class="message-txt">
-                  {{txt.message}}
-                  <span>
-                    <i
-                      @click="showMenu(index)"
+                  <div v-if="!txt.isDeleted" @click="showMenu(index, $event)">
+                    {{ txt.message }}
+                    <div
                       class="fa-solid fa-chevron-down"
-                      class="dropdown-menu"
-                    ></i
-                  ></span>
-                  <span class="message-options-menu d-none">Elimina</span>
+                      class="showMenuIcon"
+                      :class="{ 'active': txt.showMenu }"
+                    ></div>
+                  </div>
+                  <div v-else v-html="deletedMessageText"></div>
+                  <div v-if="txt.showMenu" class="message-options-menu">
+                    <span @click="deleteMessage(index)">Elimina</span>
+                  </div>
                 </div>
                 <span class="message-txt-time"
                   >{{txt.date.substring(11,16)}}</span
