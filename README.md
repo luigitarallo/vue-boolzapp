@@ -1,5 +1,40 @@
 # Boolzapp
 
+- The web app, named "BoolZapp," is a messaging application similar to Whatsapp. It provides a user interface for managing contacts, viewing and sending messages, and interacting with chat elements.
+
+- With this project I learned how to build a responsive and interactive user interface using HTML, CSS, and JavaScript. With Vue.js I created dynamic and reactive components, managing state, and handling events. I used external libraries like Font Awesome and Bootstrap for enhanced design and functionality. Overall, the "BoolZapp" web app showcases a blend of frontend technologies and interactive features.
+
+## Key Features:
+
+- Contacts Management: The app allows users to manage their contacts, view contact information, and initiate new chats.
+
+- Real-time Search: A search input enables users to dynamically filter contacts based on the entered search criteria.
+
+- Chat Interface: The app features a two-pane layout, separating the contacts container and the chat container. The chat container displays messages in a conversation format.
+
+- Message Interaction: Users can send and receive messages, and each message can be deleted, providing a basic form of interaction.
+
+- Vue.js Integration: Vue.js is utilized to manage the state of the application, handle user interactions, and update the UI dynamically.
+
+- Event Handling: The code includes event handling to manage interactions such as clicking on contacts, deleting messages, and handling the display of message options menus.
+
+- Responsive Design: Bootstrap is incorporated to ensure that the app's layout is responsive and adapts to various screen sizes.
+
+- Time Functions: The app includes time-related functions to timestamp messages and simulate delayed message responses.
+
+## Technologies Used:
+
+- HTML5
+- CSS3
+- Bootstrap
+- Font Awesome
+- JavaScript
+- Vue.js
+
+## ScreenShot
+
+![Alt text](img/boolzapp-screenshot.png)
+
 ### Milestone 1
 
 - Replica della grafica con la possibilità di avere messaggi scritti dall’utente (verdi) e
